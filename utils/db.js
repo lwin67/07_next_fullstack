@@ -13,7 +13,7 @@ export const mysqlPool = mysql.createPool({
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASS || '',
   database: process.env.DB_NAME || 'u6703240_dit205',
-  port: Number(process.env.DB_PORT || 3306),
+  port: Number(process.env.DB_PORT || 3000),
   waitForConnections: true,
   connectionLimit: 10,
   ssl: process.env.DB_SSL === 'true' ? { minVersion: 'TLSv1.2', rejectUnauthorized: true } : undefined,
